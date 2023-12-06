@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body >
+
+<section style="background-color: rgba(240, 241, 243, 0.881);">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body sticky-sm-top sm md lg xl" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img  style="width:170px;height: 70px;" src="./images/flipkart.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex " role="search">
+                <input class="form-control me-5 col-sm-5 " style="width: 650px;height: 45px;border: none; background-color: rgb(232, 243, 250);" type="search" placeholder="Search for Products, Brands and More" aria-label="Search">
+                
+              </form>
+
+              <ul class="nav justify-content-end sm md lg xl ">
+                <li class="nav-item ">
+                  <a class="nav-link active dark " style=" font-size: 19px;color: black; margin-left: 40px;" aria-current="page" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="">  Become a seller</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="font-size: 19px;color: black; margin-left: 40px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg" alt="">
+                    Sign In
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">New customer?<span class="ms-5" style="color: blue;font-size: 16px;">Sign Up</span></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><img width="9%" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg" alt=""><span class="ms-2" style="font-size: 16px;">My Profile</span></a></li>
+                    <li><a class="dropdown-item" href="#"><img width="9%" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkplus-4ff29a.svg" alt=""><span class="ms-2" style="font-size: 16px;">Flipkart Plus Zone</span></a></li>
+                    <li><a class="dropdown-item" href="#"><img width="9%" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/orders-bfe8c4.svg" alt=""> <span class="ms-2" style="font-size: 16px;">Orders</span></a></li>
+                    <li><a class="dropdown-item" href="#"><img width="9%" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDIwLjI0OUMxMiAyMC4yNDkgMi42MjUgMTQuOTk5IDIuNjI1IDguNjI0MDNDMi42MjUgNy40OTcwNSAzLjAxNTQ2IDYuNDA0ODggMy43Mjk5NiA1LjUzMzM0QzQuNDQ0NDUgNC42NjE3OSA1LjQzODg0IDQuMDY0NzIgNi41NDM5MyAzLjg0MzdDNy42NDkwMyAzLjYyMjY4IDguNzk2NTcgMy43OTEzNyA5Ljc5MTMxIDQuMzIxMDZDMTAuNzg2MSA0Ljg1MDc2IDExLjU2NjUgNS43MDg3NCAxMiA2Ljc0OTAzVjYuNzQ5MDNDMTIuNDMzNSA1LjcwODc0IDEzLjIxMzkgNC44NTA3NiAxNC4yMDg3IDQuMzIxMDZDMTUuMjAzNCAzLjc5MTM3IDE2LjM1MSAzLjYyMjY4IDE3LjQ1NjEgMy44NDM3QzE4LjU2MTIgNC4wNjQ3MiAxOS41NTU1IDQuNjYxNzkgMjAuMjcgNS41MzMzNEMyMC45ODQ1IDYuNDA0ODggMjEuMzc1IDcuNDk3MDUgMjEuMzc1IDguNjI0MDNDMjEuMzc1IDE0Ljk5OSAxMiAyMC4yNDkgMTIgMjAuMjQ5WiIgc3Ryb2tlPSIjMjEyMTIxIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=" alt=""> <span class="ms-2" style="font-size: 16px;">Wishlist</span></a></li>
+                    <li><a class="dropdown-item" href="#"><img width="9%" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg" alt=""> <span class="ms-2" style="font-size: 16px;">Rewards</span></a></li>
+                    <li><a class="dropdown-item" href="#"> <img width="9%" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/giftCard-bd87e1.svg" alt=""><span class="ms-2" style="font-size: 16px;">Gift Cards</span></a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size: 19px;color: black; margin-left: 40px;" href="#"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt="">Cart</a>
+                </li>
+                
+              </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+
+      <div>
+        <div  class="row row-cols-1 m-2 row-cols-md-6 g-1 text-center sm md lg xl" style="background-color: white;">
+          <a href="" style="text-decoration: none;">
+            <div class="col" >
+              <div class="card" style="border: none;">
+                <img src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" class="card-img-top w-25 mx-auto d-block" alt="...">
+                  <p class="card-title">Grocery</p>
+              </div>
+            </div>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <div class="col" >
+              <div class="card" style="border: none;">
+                <img src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" class="card-img-top w-25 mx-auto d-block" alt="...">
+                  <p class="card-title">Mobiles</p>
+              </div>
+            </div>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <div class="col" >
+              <div class="card" style="border: none;">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" class="card-img-top w-25 mx-auto d-block" alt="...">
+                  <p class="card-title">Fashion</p>
+              </div>
+            </div>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <div class="col" >
+              <div class="card" style="border: none;">
+                <img src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" class="card-img-top w-25 mx-auto d-block" alt="...">
+                  <p class="card-title">Electronics</p>
+              </div>
+            </div>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <div class="col" >
+              <div class="card" style="border: none;">
+                <img src="https://rukminim1.flixcart.com/flap/80/80/image/0ff199d1bd27eb98.png?q=100" class="card-img-top w-25 mx-auto d-block" alt="...">
+                  <p class="card-title">Appliances</p>
+              </div>
+            </div>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <div class="col" >
+              <div class="card" style="border: none;">
+                <img src="https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100" class="card-img-top w-25 mx-auto d-block" alt="...">
+                  <p class="card-title">Beauty,Toys & More</p>
+              </div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+
+
+    
+
+      <!-- carousel -->
+      <div id="carouselExampleInterval" class="carousel slide m-3 sm md lg xl" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/1ac81f8dc3185d53.jpg?q=20" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/075f1063e550db2e.jpg?q=20" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/844/140/image/d3673490b539fec2.jpg?q=50" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/2dc3aafcc8afbaf8.jpg?q=20" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/844/140/image/4abe35ff7e0ceb05.jpg?q=50" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/b91142ce378acb54.jpg?q=20" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="card m-3 sm md lg xl" style="border: none;">
+        
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/140/image/c0b62e6c3d7b6203.jpg?q=20" alt="">
+        
+      </div>
+
+      <div class="card-group m-3 sm md lg xl">
+        <div class="card">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/da5fb3e4cfe57be5.jpg?q=20" class="card-img-top" alt="...">
+          
+        </div>
+        <div class="card">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/3fe66c70ea273205.jpg?q=20" class="card-img-top" alt="...">
+        
+        </div>
+        <div class="card">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/c9f08ba59def0a5f.jpg?q=20" class="card-img-top" alt="...">
+          
+        </div>
+      </div>
+
+
+       <!-- best -->
+       <div class="row m-3 sm md lg xl" style="background-color: white;">
+        <h4 style="margin-top: 20px;">Best Mobiles</h4>
+        <div class="row row-cols-1 m-1 row-cols-md-6 g-4 sm md lg xl">
+          <a style="text-decoration: none;" href="https://www.flipkart.com/motorola-edge-40-nebula-green-256-gb/p/itmaa0bf9c327a2b?pid=MOBGKHNBTVZZU8PH&marketplace=FLIPKART">
+            <div class="col">
+              <div class="card h-100 text-center mx-auto d-block">
+                <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/300/300/xif0q/mobile/2/m/o/edge-40-pay40030in-motorola-original-imagpqzchzhg6fex.jpeg?q=90" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title"> MOTOROLA Edge 40 </h6>
+                  <p class="card-text">22% off</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="https://www.flipkart.com/poco-c51-royal-blue-64-gb/p/itm1e4e8373537a7?pid=MOBGZCQFCWNDK89P&marketplace=FLIPKART">
+            <div class="col">
+              <div class="card h-100 text-center mx-auto d-block">
+                <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/300/300/xif0q/mobile/6/v/0/c51-mzb0dxkin-poco-original-imagzdpycgrcdc8z.jpeg?q=90" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title"> POCO C51</h6>
+                  <p class="card-text">35% off</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a style="text-decoration: none;" href="https://www.flipkart.com/redmi-12-jade-black-128-gb/p/itm7b10fd42f78b2?pid=MOBGRMFKKDQ2A3V4&marketplace=FLIPKART">
+          <div class="col">
+            <div class="card h-100 text-center mx-auto d-block">
+              <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/300/300/xif0q/mobile/h/f/w/-original-imags37hy7uz2usv.jpeg?q=90" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"> REDMI 12</h6>
+                <p class="card-text">33% off</p>
+              </div>
+            </div>
+          </div>
+          </a>
+          <a style="text-decoration: none;" href="https://www.flipkart.com/vivo-t2x-5g-glimmer-black-128-gb/p/itmcb8f0f6a85d5d?pid=MOBGZBFUF389GDMP&marketplace=FLIPKART">
+          <div class="col">
+            <div class="card h-100 text-center mx-auto d-block">
+              <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/300/300/xif0q/mobile/4/h/e/-original-imagzjhwmsamexfk.jpeg?q=90" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"> vivo T2x 5G</h6>
+                <p class="card-text">31% off</p>
+              </div>
+            </div>
+          </div>
+          </a>
+          <a style="text-decoration: none;" href="https://www.flipkart.com/poco-c55-cool-blue-128-gb/p/itm26aca9fd143ba?pid=MOBGMXSWJHRVUWFE&lid=LSTMOBGMXSWJHRVUWFESKZGEW&marketplace=FLIPKART&q=mobile&store=tyy%2F4io&srno=s_1_17&otracker=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_na&fm=organic&iid=accf742b-dcbe-44d3-b013-4261fe87427a.MOBGMXSWJHRVUWFE.SEARCH&ppt=hp&ppn=homepage&ssid=vs6j3efcw00000001697397961630&qH=532c28d5412dd75b">
+          <div class="col">
+            <div class="card h-100 text-center mx-auto d-block">
+              <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/y/9/g/-original-imagnfzyhh8gz8sd.jpeg?q=70" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">POCO C55 </h6>
+                <p class="card-text">42% off</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a style="text-decoration: none;" href="https://www.flipkart.com/vivo-t2x-5g-aurora-gold-128-gb/p/itmcb8f0f6a85d5d?pid=MOBGZBFUQMTHYHSH&marketplace=FLIPKART">
+          <div class="col">
+            <div class="card h-100 text-center mx-auto d-block">
+              <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/300/300/xif0q/mobile/c/s/x/-original-imagzjhwaaewgj8r.jpeg?q=90" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"> vivo T2x 5G </h6>
+                <p class="card-text">33% off</p>
+              </div>
+            </div>
+          </div>
+        </a>
+         
+      </div>
+       </div>
+
+
+<!-- premium -->
+       <div class="row m-3 sm md lg xl" style="background-color: white;">
+        <h4 style="margin-top: 20px;">Premium Brand Mobiles</h4>
+        <div class="row row-cols-1 m-1 row-cols-md-6 g-4 sm md lg xl">
+          <a style="text-decoration: none;" href="https://www.flipkart.com/apple-iphone-15-plus-blue-128-gb/p/itm4022c14383050?pid=MOBGTAGPE4F2HAW7&lid=LSTMOBGTAGPE4F2HAW7NDYSPY&marketplace=FLIPKART&q=premium+brand+mobile&store=tyy%2F4io&srno=s_1_22&otracker=search&otracker1=search&fm=search-autosuggest&iid=ef684023-9444-403c-aab1-08e07a644797.MOBGTAGPE4F2HAW7.SEARCH&ppt=sp&ppn=sp&ssid=fjs5mixdio0000001697400849582&qH=f9f24da624e76a2a">
+            <div class="col">
+              <div class="card h-100 text-center mx-auto d-block">
+                <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/1/i/x/-original-imagtc6fhhtqjnr9.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title"> APPLE iPhone 15 Plus (Blue, 128 GB) </h6>
+                  <p class="card-text">₹89,900</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a style="text-decoration: none;" href="https://www.flipkart.com/apple-iphone-14-purple-256-gb/p/itmb2bf402090fae?pid=MOBGHWFHQHE7ZPSB&lid=LSTMOBGHWFHQHE7ZPSBPN0RGP&marketplace=FLIPKART&q=premium+brand+mobile&store=tyy%2F4io&srno=s_1_15&otracker=search&otracker1=search&fm=search-autosuggest&iid=ef684023-9444-403c-aab1-08e07a644797.MOBGHWFHQHE7ZPSB.SEARCH&ppt=sp&ppn=sp&ssid=fjs5mixdio0000001697400849582&qH=f9f24da624e76a2a">
+            <div class="col">
+              <div class="card h-100 text-center mx-auto d-block">
+                <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/b/u/f/-original-imaghxa5hvapbfds.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title">APPLE iPhone 14 (Purple, 256 GB)</h6>
+                  <p class="card-text">₹72,999</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a style="text-decoration: none;" href="https://www.flipkart.com/samsung-galaxy-s23-ultra-5g-cream-256-gb/p/itm322ed1a040dec?pid=MOBGMFFX44FGHNHV&lid=LSTMOBGMFFX44FGHNHVKDIBNL&marketplace=FLIPKART&q=premium%20brand%20mobile&sattr[]=color&sattr[]=storage&st=color">
+          <div class="col">
+            <div class="card h-100 text-center mx-auto d-block">
+              <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/1/o/-original-imagmg6gz3bsgan7.jpeg?q=70" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">SAMSUNG Galaxy S23 Ultra 5G (Cream, 256 GB)  </h6>
+                <p class="card-text">₹1,14,999</p>
+              </div>
+            </div>
+          </div>
+          </a>
+          <a style="text-decoration: none;" href="https://www.flipkart.com/apple-iphone-14-plus-blue-128-gb/p/itmac8385391b02b?pid=MOBGHWFHUYWGB5F2&lid=LSTMOBGHWFHUYWGB5F24T4IJV&marketplace=FLIPKART&q=premium+brand+mobile&store=tyy%2F4io&spotlightTagId=FkPickId_tyy%2F4io&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=ef684023-9444-403c-aab1-08e07a644797.MOBGHWFHUYWGB5F2.SEARCH&ppt=sp&ppn=sp&ssid=fjs5mixdio0000001697400849582&qH=f9f24da624e76a2a">
+          <div class="col">
+            <div class="card h-100 text-center mx-auto d-block">
+              <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/4/d/-original-imaghx9qygjjg8hz.jpeg?q=70" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"> APPLE iPhone 14 Plus (Blue, 128 GB)</h6>
+                <p class="card-text">₹71,999</p>
+              </div>
+            </div>
+          </div>
+          </a>
+          <a style="text-decoration: none;" href="https://www.flipkart.com/samsung-galaxy-z-fold5-cream-256-gb/p/itm5e9a1e2b0b9d9?pid=MOBGRS32ZCAVYQ7V&lid=LSTMOBGRS32ZCAVYQ7VEMYE2L&marketplace=FLIPKART&q=premium+brand+mobile&store=tyy%2F4io&srno=s_2_35&otracker=search&otracker1=search&fm=Search&iid=bfd88e18-db36-417d-a94f-3bafebae9ac7.MOBGRS32ZCAVYQ7V.SEARCH&ppt=sp&ppn=sp&qH=f9f24da624e76a2a">
+          <div class="col">
+            <div class="card h-100 text-center mx-auto d-block">
+              <img height="220px" class="w-75 m-2" src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/k/a/galaxy-fold5-sm-f946bzegins-samsung-original-imagru5udkewyvyn.jpeg?q=70" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">SAMSUNG Galaxy Z Fold5 (Cream, 256 GB)  </h6>
+                <p class="card-text">₹1,54,999</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a style="text-decoration: none;" href="https://www.flipkart.com/google-pixel-8-hazel-128-gb/p/itm67e2a2531aaac?pid=MOBGT5F2WD8HPTPZ&lid=LSTMOBGT5F2WD8HPTPZ74YSVG&marketplace=FLIPKART&q=premium+brand+mobile&store=tyy%2F4io&srno=s_2_47&otracker=search&otracker1=search&fm=Search&iid=1ae76946-2116-4bb6-b715-b3c146e1f30c.MOBGT5F2WD8HPTPZ.SEARCH&ppt=sp&ppn=sp&qH=f9f24da624e76a2a">
+          <div class="col">
+            <div class="card h-100 text-center mx-auto d-block">
+              <img height="220px" class="w- m-2" src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/e/y/x/-original-imagtwh5zrcy9hfj.jpeg?q=70" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">Google Pixel 8 (Hazel, 128 GB)  </h6>
+                <p class="card-text">₹75,999</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+       </div>
+       <!-- 3rd row-->
+       <div>
+        <div class="row row-cols-1 row-cols-md-3 m-2 g-4 sm md lg xl">
+          <div class="col">
+            <div class="card sm md lg xl" style="border: none;background-color: white;">
+              <h5 class="mt-3 ms-4 " style="font-weight: bold;">Festive Wear</h5>
+              <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <a style="text-decoration: none;" href="https://www.flipkart.com/all/~cs-7fac62032f285fd41077836ef816b219/pr?sid=r18,f13&marketplace=FLIPKART&restrictLocale=true">
+                    <div class="col">
+                      <div class="card">
+                        <img height="200px" src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/7/0/w/3-gl-225-combo-of-3-black-blue-red-hala-girls-original-imagp4gmu4h8ggkq.jpeg?q=70" class="card-img-top w-75 mx-auto d-block" alt="...">
+                        <div class="card-body">
+                          <p class="card-text " style="font-size: 18px;">Wrist Watches <br><span style="color: rgb(17, 132, 17); font-weight: bold;">Min 90% Off</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a style="text-decoration: none;" href="https://www.flipkart.com/all/~cs-ecf806250e13fe90da56aeb22da7af0d/pr?sid=reh,ihu,psb&marketplace=FLIPKART&restrictLocale=true">
+                    <div class="col">
+                      <div class="card">
+                        <img height="200px" src="https://rukminim2.flixcart.com/image/612/612/kp8ntzk0/hand-messenger-bag/n/p/n/new-cutting-design-ls-ng30-blck-3-messenger-bag-like-style-original-imag3gghdwdgzzab.jpeg?q=70" class="card-img-top  mx-auto d-block" alt="...">
+                        <div class="card-body">
+                          <p class="card-text " style="font-size: 18px;">Bags <br><span style="color: rgb(17, 132, 17); font-weight: bold;">Min. 70% Off</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a style="text-decoration: none;" href="https://www.flipkart.com/womens-sarees/pr?sid=clo%2C8on%2Czpd%2C9og&p%5B%5D=facets.brand%255B%255D%3DSamah&p%5B%5D=facets.brand%255B%255D%3DBanaras%2Bsilk%2Bpalace&p%5B%5D=facets.brand%255B%255D%3DAnand&p%5B%5D=facets.brand%255B%255D%3DAnand%2BSarees&p%5B%5D=facets.brand%255B%255D%3DPisara&p%5B%5D=facets.brand%255B%255D%3DClemira&p%5B%5D=facets.brand%255B%255D%3DAVANTIKA%2BFASHION&p%5B%5D=facets.brand%255B%255D%3DLOROFY&p%5B%5D=facets.brand%255B%255D%3Db%2Bbella%2Bcreation&p%5B%5D=facets.brand%255B%255D%3DVILLAGIUS&p%5B%5D=facets.brand%255B%255D%3Dsoch&p%5B%5D=facets.brand%255B%255D%3DPHEASANT&p%5B%5D=facets.brand%255B%255D%3Dyashika&p%5B%5D=facets.brand%255B%255D%3DWinza%2BDesigner&p%5B%5D=facets.brand%255B%255D%3DRatnavati&p%5B%5D=facets.brand%255B%255D%3DAadvika&p%5B%5D=facets.brand%255B%255D%3DSILK%2BZONE&p%5B%5D=facets.brand%255B%255D%3DCOSBILA%2BFASHION&p%5B%5D=facets.brand%255B%255D%3DMIRCHI%2BFASHION&p%5B%5D=facets.brand%255B%255D%3DSiril&p%5B%5D=facets.brand%255B%255D%3DLAHEJA&p%5B%5D=facets.brand%255B%255D%3DPothys&p%5B%5D=facets.brand%255B%255D%3DMagmina&p%5B%5D=facets.brand%255B%255D%3DAishwarya&p%5B%5D=facets.brand%255B%255D%3DAishwarya%2BSarees&hpid=6SQq7D95VkGJAnufHL5GP6p7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTEzMiJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IlNBUkdOMjROUU5IR0ZGWjUiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJTYXJlZXMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19">
+                    <div class="col">
+                      <div class="card">
+                        <img height="200px" src="https://rukminim2.flixcart.com/image/612/612/l1dwknk0/sari/3/z/f/free-work-vivan-fab-unstitched-original-imagcyf7hndgjcjw.jpeg?q=70" class="card-img-top w-75 mt-2  mx-auto d-block" alt=".">
+                        <div class="card-body">
+                          <p class="card-text " style="font-size: 18px;">Women's Sarees <br><span style="color: rgb(17, 132, 17); font-weight: bold;">Min. 50% Off</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+       
+                  <a style="text-decoration: none;" href="https://www.flipkart.com/clothing-and-accessories/bottomwear/jeans/men-jeans/pr?sid=clo,vua,k58,i51&otracker=categorytree&otracker=nmenu_sub_Men_0_Jeans">
+                    <div class="col">
+                      <div class="card">
+                        <img height="200px" src="https://rukminim2.flixcart.com/image/612/612/kfoapow0-0/jean/m/f/m/38-mss19ajn022-metronaut-original-imafw2hzgua2dnzn.jpeg?q=70" class="card-img-top w-75 mt-2  mx-auto d-block" alt="...">
+                        <div class="card-body">
+                          <p class="card-text " style="font-size: 18px;">Men's Jeans <br><span style="color: rgb(17, 132, 17); font-weight: bold;">Min. 50% Off</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+     
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: none;background-color: white;">
+              <h5 class="mt-3 ms-4 " style="font-weight: bold;">Home & Kitchen Essentials</h5>
+              <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <a style="text-decoration: none;" href="https://www.flipkart.com/home-decor/wall-decor-items/pr?sid=arb%2Ca77&hpid=Ws3VFYQXFO5bQ3kg5Tr9y6p7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVcHRvIDgwJSBPZmYiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJLSFJHN1Y2MkhSQlJXSkFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiV2FsbCBEZWNvciBJdGVtcyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D">
+                    <div class="col">
+                      <div class="card">
+                        <img height="200px" src="https://rukminim2.flixcart.com/image/612/612/l0pm3680/wall-decoration/p/7/e/macrame-wall-shelf-pure-cotton-2-board-with-dori-wall-hanging-original-imagcfmrdtn2m2vw.jpeg?q=70" class="card-img-top w-100 mx-auto d-block" alt="...">
+                        <div class="card-body">
+                          <p class="card-text " style="font-size: 18px;">Wall Decor Items <br><span style="color: rgb(17, 132, 17); font-weight: bold;">Upto 80% Off</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a style="text-decoration: none;" href="https://www.flipkart.com/home-decor/stickers-wallpapers/pr?sid=arb%2Cyod&hpid=4pohqQ9dJW5hpRyyJJkuDqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVcHRvIDgwJSBPZmYiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJTVElGRENLTkJRRkpKTVVNIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiU3RpY2tlcnMgJiBXYWxscGFwZXJzIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D">
+                    <div class="col">
+                      <div class="card">
+                        <img height="200px" src="https://rukminim2.flixcart.com/image/612/612/kekadu80/sticker/z/z/k/wall-decals-pink-tree-with-birds-and-nest-wall-stickers-pvc-original-imafv826gpzauzjr.jpeg?q=70" class="card-img-top  mx-auto d-block" alt="...">
+                        <div class="card-body">
+                          <p class="card-text " style="font-size: 18px;">Stickers & Wallpapers <br><span style="color: rgb(17, 132, 17); font-weight: bold;">Upto 80% Off</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a style="text-decoration: none;" href="https://www.flipkart.com/home-improvement/lawn-and-gardening/plants-and-planters/plants-saplings/pr?sid=h1m%2Cum7%2Csd1%2Ca6l&sort=popularity&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&p%5B%5D=facets.rating%255B%255D%3D1%25E2%2598%2585%2B%2526%2Babove&hpid=D-x_S256tLFAD0oK73egWqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTE5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IlBTR0dGUlZGSDlIUUtYQkgiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJMaXZlIFBsYW50cyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D">
+                    <div class="col">
+                      <div class="card">
+                        <img height="200px" src="https://rukminim2.flixcart.com/image/612/612/kvvad8w0/plant-sapling/7/0/d/no-perennial-yes-china-palm-areca-palm-indoor-outdoor-decorative-original-imag8zkvdfc6sf7z.jpeg?q=70" class="card-img-top w-75 mt-2  mx-auto d-block" alt="...">
+                        <div class="card-body">
+                          <p class="card-text " style="font-size: 18px;">Live Plants <br><span style="color: rgb(17, 132, 17); font-weight: bold;">From Rs.199</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <a style="text-decoration: none;" href="https://www.flipkart.com/home-decor/paintings-posters/paintings/pr?sid=arb%2Cbga%2Cmmf&hpid=-h43eTAZ7l9Kh14F25r8W6p7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVcHRvIDgwJSBPZmYiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJQVEdGSjJZNEdaVVVEWVlQIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiUGFpbnRpbmdzIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D">
+                    <div class="col">
+                      <div class="card">
+                        <img height="210px" src="https://rukminim2.flixcart.com/image/612/612/kkmwr680/painting/y/x/r/42-sanfpnl31211-saf-original-imafzxvjzwepgfzc.jpeg?q=70" class="card-img-top w-100  mx-auto d-block" alt="...">
+                        <div class="card-body">
+                          <p class="card-text " style="font-size: 18px;">Paintings <br><span style="color: rgb(17, 132, 17); font-weight: bold;">Upto 80% Off</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card" style="border: none;">
+              <div class="card-body" >
+              <a href=""><img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-727941,resizemode-75,msid-104426449/industry/services/retail/amazon-flipkart-festive-offers-give-a-massive-push-in-e-retail-sales/festive-season-sale.jpg" class="card-img-top img-fluid"  alt="..."></a>
+              </div>
+              <div class="card-body">
+                <a href=""><img src="https://gumlet.assettype.com/digitalterminal/2023-05/dcbf1af6-0f6c-4111-b76d-fa497a4fe9af/Vivo_png.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true" class="card-img-top w-100 img-fluid" style="height: 290px;" alt="..."></a>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+       </div>
+      </section>
+
+       <section class="footer sm md lg xl" style="background-color: rgb(17, 17, 17);">
+         
+          <div class=" row  row-cols-md-6 mt-3 sm md lg xl">
+            <div class="card" style="background-color: rgb(17, 17, 17); border-color: rgb(17, 17, 17) ;">
+              <div class="card-body">
+                <h6 class="card-title mt-4" style="color: gray; font-size: 13px;margin-left: 16%;">ABOUT</h6>
+                <p class="card-text">
+                  <ul style="list-style-type: none;font-size: 13px; color: rgb(229, 225, 225); font-weight: bold;">
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Flipkart Stories</li>
+                    <li>Press</li>
+                    <li>Flipkart Wholesale</li>
+                    <li>Cleartrip</li>
+                    <li>Corporate Information</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="card" style="background-color:rgb(17, 17, 17); border-color: rgb(17, 17, 17) ;">
+              <div class="card-body">
+                <h6 class="card-title mt-4" style="color: gray; font-size: 13px;margin-left: 16%;">HELP</h6>
+                <p class="card-text">
+                  <ul style="list-style-type: none;font-size: 13px; color: rgb(229, 225, 225); font-weight: bold;">
+                    <li>Payments</li>
+                    <li>Shipping</li>
+                    <li>Cancellation & Returns</li>
+                    <li>FAQ</li>
+                    <li>Report Infringement</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="card" style="background-color: rgb(17, 17, 17);  border-color: rgb(17, 17, 17) ;">
+              <div class="card-body">
+                <h6 class="card-title mt-4" style="color: gray; font-size: 13px;margin-left: 16%;">CONSUMER POLICY</h6>
+                <p class="card-text">
+                  <ul style="list-style-type: none;font-size: 13px; color:rgb(229, 225, 225); font-weight: bold;">
+                    <li>Cancellation & Returns</li>
+                    <li>Terms of Use</li>
+                    <li>Security</li>
+                    <li>Privacy</li>
+                    <li>Sitemap</li>
+                    <li>Grievance Redressal</li>
+                    <li>EPR Compliance</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="card" style="background-color: rgb(17, 17, 17);">
+              <div class="card-body">
+                <h6 class="card-title mt-4" style="color: gray; font-size: 13px;margin-left: 16%;">SOCIAL</h6>
+                <p class="card-text">
+                  <ul style="list-style-type: none;font-size: 13px; color: rgb(229, 225, 225); font-weight: bold;">
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="card" style="background-color: rgb(17, 17, 17);  border-color: rgb(17, 17, 17);">
+              <div class="card-body">
+                <h6 class="card-title mt-4" style="color: gray; font-size: 13px;margin-left: 16%;">Mail Us:</h6>
+                <p class="card-text">
+                  <ul style="list-style-type: none;font-size: 13px; color: rgb(229, 225, 225); font-weight: bold;">
+                    <li>Flipkart Internet Private Limited</li>
+                    <li>Buildings Alyssa, Begonia&</li>
+                    <li>Clove Embassy Tech Village</li>
+                    <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                    <li>Bengaluru, 560103,</li>
+                    <li>Karnataka, India</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="card" style="background-color: rgb(17, 17, 17);">
+              <div class="card-body">
+                <h6 class="card-title mt-4" style="color: gray; font-size: 13px;margin-left: 16%;">Registered Office Address</h6>
+                <p class="card-text">
+                  <ul style="list-style-type: none;font-size: 13px; color:  rgb(229, 225, 225); font-weight: bold;">
+                    <li>Flipkart Internet Private Limited</li>
+                    <li>Buildings Alyssa, Begonia&</li>
+                    <li>Clove Embassy Tech Village</li>
+                    <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                    <li>Bengaluru, 560103,</li>
+                    <li>Karnataka, India</li>
+                    <li>CIN : U51109K12PTC2566</li>
+                    <li>Telephone:044-45614700</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+  
+  
+       </section>
+      
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
